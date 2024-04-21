@@ -1,0 +1,90 @@
+body{
+    font-family: roboto, san-serif;
+    /* 1REM = 16px */
+    font-size: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    background-color: rgb(240, 240, 240);
+}
+
+footer {
+    background-color: lightcoral;
+}
+
+.barra__navegacion {
+    background-color: #32dfa5;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.listas {
+    list-style-type: none;
+}
+
+.tarjeta {background-color: aquamarine;
+    height: 400px;
+    width: 250px;
+    padding: 1rem;
+}
+
+.tarjeta img {
+    height: inherit;
+    width: inherit;
+    border-radius: 1rem    ;
+}
+
+.redes__boton {
+    background-color: yellow;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa{
+    background-color: pink;
+}
+
+#logo__container{
+    background-color: blue;
+    padding: .5rem;
+    height: 12.5rem;
+    width: 12.5rem;
+    /* defino el contenedor como flex */
+    display: flex;
+    /* alineacion respcto del eje X (eje principal) */
+    justify-content: center;
+    /* alineacion respecto del eje Y (eje transversal) */
+    align-items: center;
+}
+
+#logo {
+    background-color: red;
+    height: 10rem;
+    width: 10rem;
+}
+
+#botonera {
+    background-color: blueviolet;
+    width: 100rem;
+}
+
+#imagen__oficina {
+    height: 200px;
+    width: 300px;
+    border-radius: 0.5rem;
+}
+
+#nosotros {
+    background-color: bisque;
+    height: auto;
+}
+
+#servicios {
+    display: flex;
+    flex-direction: row;  
+}

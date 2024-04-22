@@ -1,3 +1,10 @@
+/* Paleta colores 
+    Fonodo: #F9F7F7
+    Principal: #DBE2EF
+    Secundario: #3F72AF
+    Resaltado: #112D4E
+*/
+
 header {
    background: linear-gradient(to bottom, #3f72af 0%,#8daacd 70%,#dbe2ef 100%);
 }

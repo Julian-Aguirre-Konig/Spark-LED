@@ -127,10 +127,33 @@ footer {
 #texto__conteiner {
     background-color: #112D4E;
     border-radius: .625rem;
-    width: 500px;
-    padding: 1rem;
+    /* Cuando se suma el padding de 1rem (16px por lado), 
+    se agregan 32px de altura total */
+    width: 468px;
+    height: 300px;
+    /* padding: 1rem; */
     color: #DBE2EF;
     font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#texto__conteiner ul {
+
+}
+
+#texto__nosotros{
+    
+}
+
+#texto__conteiner h3{
+    padding-left: 1rem;
+}
+
+#texto__conteiner p{
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 #servicios {
@@ -183,7 +206,9 @@ footer {
 }
 
 .mensaje {
-    padding: 2.5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    line-height: 4rem;
 }
 
 #tarjeta__auxiliar {

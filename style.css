@@ -1,39 +1,47 @@
+header {
+   background: linear-gradient(to bottom, #3f72af 0%,#8daacd 70%,#dbe2ef 100%);
+}
+
 body{
     font-family: roboto, san-serif;
     /* 1REM = 16px */
     font-size: 1rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
     background-color: rgb(240, 240, 240);
+    color: #F9F7F7;
 }
 
 footer {
-    background-color: lightcoral;
+    background: linear-gradient(to bottom, #dbe2ef 0%,#8daacd 30%,#3f72af 100%);
 }
 
+
 .barra__navegacion {
-    background-color: #32dfa5;
+    /* background-color: #32dfa5; */
     display: flex;
     flex-flow: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
+}
+
+.section {
+    width: 100%;
 }
 
 .listas {
     list-style-type: none;
 }
 
-.tarjeta {background-color: aquamarine;
-    height: 400px;
-    width: 250px;
-    padding: 1rem;
+.tarjeta {
+    /* background-color: aquamarine; */
+    height: 500px; /*Set any dimensions you like*/
+    width: 300px;
 }
 
 .tarjeta img {
-    height: inherit;
-    width: inherit;
-    border-radius: 1rem    ;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
 }
 
 .redes__boton {
@@ -49,8 +57,9 @@ footer {
     background-color: pink;
 }
 
+
 #logo__container{
-    background-color: blue;
+    /* background-color: blue; */
     padding: .5rem;
     height: 12.5rem;
     width: 12.5rem;
@@ -63,28 +72,114 @@ footer {
 }
 
 #logo {
-    background-color: red;
+    background-color: white;
+    border-radius: 50%;
     height: 10rem;
     width: 10rem;
 }
 
 #botonera {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     width: 100rem;
 }
 
-#imagen__oficina {
-    height: 200px;
-    width: 300px;
-    border-radius: 0.5rem;
-}
 
 #nosotros {
-    background-color: bisque;
+    background-color: #DBE2EF;
     height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#imagen__oficina {
+    height: 300px;
+    width: 500px;
+    border-radius: 0.625rem;
+}
+#texto__conteiner {
+    background-color: #112D4E;
+    border-radius: .625rem;
+    width: 500px;
+    padding: 1rem;
+    color: #DBE2EF;
+    font-size: 1rem;
 }
 
 #servicios {
+    background-color: #3F72AF;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     display: flex;
-    flex-direction: row;  
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#contacto {
+    background-color: #DBE2EF; 
+}
+
+#contacto {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tarjeta de contaco */
+#contenedor__tarjeta {
+    background-color: #112D4E;
+    border-radius: 0.625rem;
+    width: 782px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: -3px 6px 10px #112D4E;
+}
+
+#formulario {
+    order: 1;
+    margin: 2rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario label {
+    margin-left: 1rem;
+}
+
+.campo_formulario {
+    border-radius: .4rem;
+    border: none;
+    padding: .25rem;
+    margin: .25rem;
+    background-color: #F9F7F7;
+}
+
+.mensaje {
+    padding: 2.5rem;
+}
+
+#tarjeta__auxiliar {
+    order: 2;
+    background-color: #3F72AF;
+    border-top-right-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+    width: 260px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tarjeta__auxiliar h1 {
+    color: #F9F7F7;
+    text-align: center;
+    font-weight: 900;
+    line-height: 4.5rem;
+    font-size: 2rem;
 }

@@ -34,18 +34,18 @@
         </header>
 
         <!-- Seccion "Nosotros" -->
-        <section id="nosotros">
+        <section class="section" id="nosotros">
             <!-- Texto con vision, mision y valores -->
-            <div>
+            <div id="texto__conteiner">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum eos ut 
-                    explicabo inventore quam necessitatibus repellat doloremque impedit a possimus 
-                    culpa, facere sunt doloribus velit, porro accusamus alias minima.
+                    Fundada en 2008, Spark LED se ah consolidado como una de las principales empresas en el rubro.
+                    Desde conciertos hasta conferencias corporativas, hemos sido lo pioneros en la instalacion de
+                    sistemas que transforman espacios en experiencias inolvidables.
                 </p>
                 <ul class="listas">
-                    <li><p>Vision</p></li>
-                    <li><p>Mision</p></li>
-                    <li><p>Valores</p></li>
+                    <li><h3>Vision:</h3><p>Proporcionar soluciones de vanguardia en tecnologia de pantallas LED.</p></li>
+                    <li><h3>Mision:</h3><p>Ser lideres reconocidos a nivel nacional y regional en la industria de la iluminacion LED</p></li>
+                    <li><h3>Valores:</h3><p>Exelencia, innovacion y compromiso son los valores por los cuales no regimos.</p></li>
                 </ul>
             </div>
             <!-- Imagen de la empresa -->
@@ -55,27 +55,46 @@
         </section>
         
         <!-- Seccion "Servicios" -->
-        <section id="servicios">
+        <section class="section" id="servicios">
             <div class="tarjeta">
-                <img src="images/test/perrito1.jpg" alt="Perrito feliz 1">
+                <img src="images/tarjetas/instalacion.jpg" alt="Hombre realizando instalacion">
             </div>
             <div class="tarjeta">
-                <img src="images/test/perrito2.jpg" alt="Perrito feliz 2">
+                <img src="images/tarjetas/pantallas led.webp" alt="Perrito feliz 2">
             </div>
             <div class="tarjeta">
-                <img src="images/test/perrito3.jpg" alt="Perrito feliz 3">
+                <img src="images/tarjetas/reparacion.jpg" alt="Perrito feliz 3">
             </div>
         </section>
 
         <!-- Seccion "Contacto" -->
-        <section id="contacto">
-
+        <section class="section" id="contacto">
+            <div id="contenedor__tarjeta">
+                <div id="formulario">
+                    <label for="nombre">Nombre<br></label>
+                    <input id="nombre" class="campo_formulario" name="nombre"></input>
+                    <label for="empresa">Empresa<br></label>
+                    <input id="empresa" class="campo_formulario" name="empresa"></input>
+                    <label for="correo">Corre<br></label>
+                    <input id="correo" class="campo_formulario" name="correo"></input>
+                    <label for="telefono">Telefono<br></label>
+                    <input id="telefono" class="campo_formulario" name="telefono"></input>
+                    <label for="mensaje">Dejanos tu mensaje<br></label>
+                    <input id="mensaje" class="campo_formulario mensaje" name="mensaje"></input>
+                </div>
+                <div id="tarjeta__auxiliar">
+                    <h1>Dejanos<br>tu<br>consulta</h1>
+                </div>
+            </div>
         </section>
 
         <footer>
             <!-- Metodos de contacto -->
             <div>
-
+                <ul>
+                    <a href=""><li>Contacto</li></a>
+                    <a href=""><li>Novedades</li></a>
+                </ul>
             </div>
             <!-- Redes sociales -->
             <div>
@@ -85,11 +104,6 @@
                     <a href="https://www.linkedin.com/"><div class="redes__boton"><span class="fa fa-instagram"></span></div></a>
                     <a href="https://www.twitter.com/"><div class="redes__boton"><span class="fa fa-instagram"></span></div></a>
                 </ul>
-            </div>
-            <!-- Copyright -->
-            <div>
-                <p>Copyright <span></span>2024 Spark LED</p>
-                <p><span>|</span> Web Design by <a href="https://github.com/Julian-Aguirre-Konig" target="blank">Julián Aguirre König</a></p>
             </div>
         </footer>
     </body>

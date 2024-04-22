@@ -1,5 +1,5 @@
 /* Paleta colores 
-    Fonodo: #F9F7F7
+    Color texto: #F9F7F7
     Principal: #DBE2EF
     Secundario: #3F72AF
     Resaltado: #112D4E
@@ -13,12 +13,15 @@ body{
     font-family: roboto, san-serif;
     /* 1REM = 16px */
     font-size: 1rem;
-    background-color: rgb(240, 240, 240);
+    background-color: #DBE2EF;
     color: #F9F7F7;
 }
 
 footer {
     background: linear-gradient(to bottom, #dbe2ef 0%,#8daacd 30%,#3f72af 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 
@@ -31,10 +34,32 @@ footer {
 
 .section {
     width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .listas {
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+.listas a{
+    text-decoration: none;
+    padding: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #112D4E;
+}
+
+.listas a :hover{
+    color:#F9F7F7;
 }
 
 .tarjeta {
@@ -47,21 +72,16 @@ footer {
     width: 100%;
     object-fit: cover;
     border-radius: .5rem;
+    box-shadow: -3px 6px 10px #112D4E;
 }
 
 .redes__boton {
-    background-color: yellow;
     height: 3rem;
     width: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.fa{
-    background-color: pink;
-}
-
 
 #logo__container{
     padding: .5rem;
@@ -76,16 +96,18 @@ footer {
 }
 
 #logo {
-    background-color: white;
+    background-color: #F9F7F7;
     border-radius: 50%;
     height: 10rem;
     width: 10rem;
 }
 
 #botonera {
-    width: 100rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 
 #nosotros {
     background-color: #DBE2EF;
@@ -101,6 +123,7 @@ footer {
     width: 500px;
     border-radius: 0.625rem;
 }
+
 #texto__conteiner {
     background-color: #112D4E;
     border-radius: .625rem;
@@ -112,18 +135,13 @@ footer {
 
 #servicios {
     background-color: #3F72AF;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
 #contacto {
-    background-color: #DBE2EF; 
-}
-
-#contacto {
+    background-color: #DBE2EF;
     padding-top: 2rem;
     padding-bottom: 2rem;
     display: flex;
@@ -153,7 +171,7 @@ footer {
 }
 
 #formulario label {
-    margin-left: 1rem;
+    margin-left: .3rem;
 }
 
 .campo_formulario {
@@ -186,4 +204,36 @@ footer {
     font-weight: 900;
     line-height: 4.5rem;
     font-size: 2rem;
+}
+
+#info__contacto {
+    display: flex;
+    flex-direction: row;
+}
+
+#botonera__redes a{
+    margin: 0;
+}
+
+#info__contacto ul{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#info__contacto ul a{
+    text-decoration: none;
+    color: #112D4E;
+    margin: 1rem;
+    padding: .5rem;
+}
+
+#info__contacto ul a :hover{
+    color: #F9F7F7;
+}
+
+.listas h3, p {
+    margin: 0;
+    padding: 0;
 }

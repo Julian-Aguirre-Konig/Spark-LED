@@ -23,7 +23,6 @@ footer {
 
 
 .barra__navegacion {
-    /* background-color: #32dfa5; */
     display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -39,8 +38,7 @@ footer {
 }
 
 .tarjeta {
-    /* background-color: aquamarine; */
-    height: 500px; /*Set any dimensions you like*/
+    height: 500px;
     width: 300px;
 }
 
@@ -66,7 +64,6 @@ footer {
 
 
 #logo__container{
-    /* background-color: blue; */
     padding: .5rem;
     height: 12.5rem;
     width: 12.5rem;
@@ -86,7 +83,6 @@ footer {
 }
 
 #botonera {
-    /* background-color: blueviolet; */
     width: 100rem;
 }
 

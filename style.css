@@ -10,11 +10,13 @@ header {
 }
 
 body{
-    font-family: roboto, san-serif;
+    font-family: "roboto", san-serif;
     /* 1REM = 16px */
     font-size: 1rem;
     background-color: #DBE2EF;
     color: #F9F7F7;
+    padding: 0;
+    margin: 0;
 }
 
 footer {

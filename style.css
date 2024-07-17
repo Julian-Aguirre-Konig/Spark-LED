@@ -1,17 +1,9 @@
-/* Paleta colores 
-    Color texto: #F9F7F7
-    Principal: #DBE2EF
-    Secundario: #3F72AF
-    Resaltado: #112D4E
-*/
-
 header {
    background: linear-gradient(to bottom, #3f72af 0%,#8daacd 70%,#dbe2ef 100%);
 }
 
 body{
     font-family: "roboto", san-serif;
-    /* 1REM = 16px */
     font-size: 1rem;
     background-color: #DBE2EF;
     color: #F9F7F7;
@@ -65,16 +57,58 @@ footer {
 }
 
 .tarjeta {
-    height: 500px;
+    position: relative;
     width: 300px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
-.tarjeta img {
-    height: 100%;
+#tarjeta_1 {
+    background-image: url('images/tarjetas/instalacion.jpg');
+}
+
+#tarjeta_2 {
+    background-image: url('images/tarjetas/pantallas\ led.webp');
+}
+
+#tarjeta_3 {
+    background-image: url('images/tarjetas/reparacion.jpg');
+}
+
+.overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
     width: 100%;
-    object-fit: cover;
-    border-radius: .5rem;
-    box-shadow: -3px 6px 10px #112D4E;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contenido-tarjeta {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    color: #fff;
+    padding: 20px;
+}
+
+.contenido-tarjeta h2,
+.contenido-tarjeta p {
+    margin: 0;
 }
 
 .redes__boton {
@@ -89,11 +123,8 @@ footer {
     padding: .5rem;
     height: 12.5rem;
     width: 12.5rem;
-    /* defino el contenedor como flex */
     display: flex;
-    /* alineacion respcto del eje X (eje principal) */
     justify-content: center;
-    /* alineacion respecto del eje Y (eje transversal) */
     align-items: center;
 }
 
@@ -111,11 +142,14 @@ footer {
     align-items: center;
 }
 
+.section {
+    display: flex;
+    flex-direction: row;
+}
+
 #nosotros {
     background-color: #DBE2EF;
     height: auto;
-    display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
@@ -129,11 +163,8 @@ footer {
 #texto__conteiner {
     background-color: #112D4E;
     border-radius: .625rem;
-    /* Cuando se suma el padding de 1rem (16px por lado), 
-    se agregan 32px de altura total */
     width: 468px;
     height: 300px;
-    /* padding: 1rem; */
     color: #DBE2EF;
     font-size: 1rem;
     display: flex;
@@ -152,8 +183,6 @@ footer {
 
 #servicios {
     background-color: #3F72AF;
-    display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
 }
 
@@ -161,7 +190,6 @@ footer {
     background-color: #DBE2EF;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -255,4 +283,90 @@ footer {
 .listas h3, p {
     margin: 0;
     padding: 0;
+}
+
+@media (max-width: 900px) {
+    /* HEADER */
+    #logo__container {
+        height: auto;
+    }
+
+    .listas {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .listas a {
+        margin: 0;
+        font-size: 1.6rem;
+    }
+
+    /* BODY */
+    .section {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #texto__conteiner,
+    #contenedor__tarjeta {
+        width: 90%;
+    }
+
+    .image__conteiner {
+        display: flex;
+        justify-content: center;
+    }
+
+    #imagen__oficina {
+        width: 90%;
+        height: auto;
+    }
+
+    /* FOOTER */
+    footer {
+        flex-direction: column;
+    }
+
+    #info__contacto {
+        justify-content: center;
+    }
+
+    #info__contacto ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    #botonera__redes {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 500px) {
+   /* HEADER */
+   .barra__navegacion {
+    flex-direction: row;
+    align-items: center;
+    }
+    
+    .listas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* BODY */
+    #texto__conteiner {
+        height: auto;
+    }
+
+    #texto__conteiner h3 {
+        padding-left: 10px;
+    }
+
+    #texto__conteiner p {
+        padding: 10px;
+    }
 }
